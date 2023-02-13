@@ -47,7 +47,6 @@ GROUP BY
 ORDER BY
    customer_orders.customer_id ASC;
 
-
 -- 6. What was the maximum number of pizzas delivered in a single order?
 
 SELECT
@@ -104,7 +103,6 @@ WHERE
     AND (exclusions IS NOT NULL AND exclusions <> "null" AND LENGTH(exclusions) > 0) -- NULL = No changes made
     AND (extras IS NOT NULL and extras <> "null" AND LENGTH(extras) > 0);
 
-
 -- 9. What was the total volume of pizzas ordered for each hour of the day?
 
 SELECT
@@ -116,7 +114,6 @@ GROUP BY
     hour
 ORDER BY
     hour, pizza_order_volume ASC;
-
 
 -- 10. What was the volume of orders for each day of the week?
 
